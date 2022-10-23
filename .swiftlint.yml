@@ -1,0 +1,60 @@
+disabled_rules:
+  - cyclomatic_complexity
+  - file_length
+  - for_where
+  - force_cast
+  - force_try
+  - function_body_length
+  - function_parameter_count
+  - identifier_name
+  - large_tuple
+  - line_length
+  - nesting
+  - opening_brace
+  - prohibited_interface_builder
+  - single_test_class
+  - trailing_comma
+  - type_body_length
+  - type_name
+
+opt_in_rules:
+  - anyobject_protocol
+  - closure_end_indentation
+  - closure_spacing
+  - collection_alignment
+  - conditional_returns_on_newline
+  - contains_over_first_not_nil
+  - convenience_type
+  - discouraged_object_literal
+  - empty_count
+  - empty_string
+  - empty_xctest_method
+  - fallthrough
+  - fatal_error_message
+  - first_where
+  - joined_default_parameter
+  - legacy_random
+  - lower_acl_than_parent
+  - modifier_order
+  - multiline_literal_brackets
+  - multiline_parameters
+  - multiline_parameters_brackets
+  - operator_usage_whitespace
+  - overridden_super_call
+  - override_in_extension
+  - prohibited_interface_builder
+  - prohibited_super_call
+  - redundant_type_annotation
+  - single_test_class
+  - sorted_first_last
+  - sorted_imports
+  - static_operator
+  - superfluous_disable_command
+  - switch_case_on_newline
+  - toggle_bool
+  - unavailable_function
+  - unneeded_parentheses_in_closure_argument
+
+excluded:
+  - .build
+  - Scripts

@@ -1,0 +1,27 @@
+--exclude .build/**/*
+--exclude Scripts/**/*
+
+# rules
+
+--disable trailingClosures
+--enable blankLinesBetweenScopes
+--enable preferDouble
+--enable wrapEnumCases
+--enable wrapSwitchCases
+
+# options
+
+--exponentcase lowercase
+--header strip
+--ifdef no-indent
+--importgrouping testable-last
+--indent 2
+--patternlet inline
+--ranges no-space
+--self init-only
+--someAny false
+--stripunusedargs unnamed-only
+--wraparguments before-first
+--wrapcollections before-first
+--wrapparameters before-first
+
