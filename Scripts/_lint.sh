@@ -72,7 +72,7 @@ function checkForUpdates() {
         fi
     fi
 
-    if latestLintHash=$(curl -s https://github.com/noremac/lint/Scripts/_lint.sh | md5); then
+    if latestLintHash=$(curl -s https://raw.githubusercontent.com/noremac/lint/main/Scripts/_lint.sh | md5); then
         localLintHash=$(cat ${scriptPath}/_lint.sh | md5)
         if [ "$latestLintHash" != "$localLintHash" ]; then
             echoError "Your lint script is out-of-date. Please run Scripts/bootstrap.sh."

@@ -8,7 +8,7 @@ if [ -h .git/hooks/pre-commit ]; then
     rm .git/hooks/pre-commit
 fi
 
-lintURL="https://github.com/noremac/lint/Scripts/_lint.sh"
+lintURL="https://raw.githubusercontent.com/noremac/lint/main/Scripts/_lint.sh"
 
 if [ "$(curl -s -I -o /dev/null -w "%{http_code}" "$lintURL")" -ne 200 ]; then
     echo "Could not download the lint file. ❌"
