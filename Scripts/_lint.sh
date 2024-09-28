@@ -38,7 +38,7 @@ function echoWarning() {
 }
 
 function latestTag() {
-    git ls-remote --tags "https://github.com/$1" 2>/dev/null | grep -v "\^{}" | grep -v "rc" | awk -F / '{print $3}' | sort -rV | head -n 1
+    git ls-remote --tags "https://github.com/$1" 2>/dev/null | grep -v "\^{}" | grep -v "pull" | grep -v "rc" | awk -F / '{print $3}' | sort -rV | head -n 1
 }
 
 function updateToLatest() {
